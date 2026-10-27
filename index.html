@@ -1132,7 +1132,7 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 560" fill="none" id="lcd-board" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="display:block">
       <title>LCD display board</title>
       <style>
-      /* ---- LCD text styles: edit freely, each field is independent ---- */
+      /* ---- LCD text styles: edit freely, each field is independent ---- 
       #lcd-title {
         font-family: Arial, "Helvetica Neue", Helvetica, "Liberation Sans", sans-serif;
         font-size: 34px;
@@ -1149,6 +1149,7 @@
         fill: #FFFFFF;
         letter-spacing: 0;
       }
+      */
      </style>
       <defs>
         <clipPath id="lcd-clip1">
@@ -1386,8 +1387,8 @@
         <g id="lcd-screen">
           <rect id="lcd-screen-bg" x="115" y="15" width="640" height="530" fill="#242114"/>
           <g id="lcd-text" clip-path="url(#lcd-screen-clip)">
-            <text id="lcd-title" x="120" y="54.287">Title:</text>
-            <text id="lcd-content" x="120" y="86.74">Description</text>
+            <text id="lcd-title" class="lcd-title" x="120" y="54.287">Title:</text>
+            <text id="lcd-content" class="lcd-text" x="120" y="86.74">Description</text>
           </g>
         </g>
         <g id="lcd-pins">

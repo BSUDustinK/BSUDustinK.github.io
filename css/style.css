@@ -67,19 +67,20 @@
 
 #lcd-title {
   font-family: 'Departure Mono', monospace;
-  font-size: 11px;
-  fill: #00ff00; /* Use 'fill' instead of 'color' for SVG text */
+  font-size: 34px;
+    font-weight: normal;
+    font-style: normal;
+  fill: #cece00; /* Use 'fill' instead of 'color' for SVG text */
 }
 
 #lcd-text {
   font-family: 'Departure Mono', monospace;
   font-size: 22px;
-  fill: #00ff00;
+  fill: #cece00;
   letter-spacing: 1px;
 }
 
 .main-title {
-    font-family: 'Departure Mono', monospace;
     font-size: 32px;
     color: #000000;
     text-align: center;
@@ -87,8 +88,7 @@
 }
 
 .welcome-text {
-    font-family: 'Departure Mono', monospace;
-    font-size: 16px;
+    font-size: 18px;
     color: #000000;
     text-align: left;
     padding: 0 10% 0 10%;

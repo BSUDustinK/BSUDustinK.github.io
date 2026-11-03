@@ -1,0 +1,10 @@
+STM32 Alarm Clock
+**Proposal**
+An alarm Clock which has 2 user customizable alarm times
+When the alarm sounds, music is played
+
+**Requirements**
+Utilize the onboard Real-Time Clock
+Display current time on an LCD
+Allow for Users to set two seperate alarm times
+Play alarm music on a piezo electric buzzer

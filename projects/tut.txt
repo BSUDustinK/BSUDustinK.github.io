@@ -1,0 +1,4 @@
+Welcome to my Maker Bench
+This module contains a brief overview on several of my personal or school projects which I feel best represent my capabilites
+
+To get started, use the buttons bellow the LCD.

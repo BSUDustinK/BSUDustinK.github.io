@@ -5,13 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Dustin Kirkpatrick</title>
-   
 </head>
 <body>
-    <h1 class="main-title">Dustin Kirkpatrick</h1>
-    <p class="welcome-text">Welcome to my makers bench! Feel free to check out my projects! Further documentation is being uploaded as I find time between classes.</p>
-    
+  
+  <h1 class="main-title">Dustin Kirkpatrick</h1>
 <div id="stage">
+  <div>
+    <!--
+    <p class="welcome-text">Welcome to my makers bench! Feel free to check out my projects! Further documentation is being uploaded as I find time between classes.</p>
+     <div id="list-of-links">
+      <table>
+        <tr>
+          <td><a href="https://github.com/BSUDustinK" target="_blank">My Github</a></td>
+          <td><a href="https://www.linkedin.com/in/dustycomputers/" target="_blank">My LinkedIn</a></td>
+        </tr>
+      </table>
+    </div> -->
+  </div>
   <div id="mcu-container" class="box">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" fill="none" id="mcu-board" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="display:block">
       <title>MCU board</title>
@@ -1128,6 +1138,12 @@
   </div>
 
   <div id="lcd-controls-container">
+    <div class="button-controller">
+      <button class="press-button" id="scroll-left"> &#x2190; </button>
+      <p class="controller-text">Controls</p>
+      <button class="press-button" id="scroll-right"> &#x2192; </button>
+    </div>
+    
     <div id="lcd-container" class="box">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 560" fill="none" id="lcd-board" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="display:block">
       <title>LCD display board</title>
@@ -1385,11 +1401,18 @@
           <rect fill="#D9D9D9" x="110" y="10" width="650" height="540"/>
         </g>
         <g id="lcd-screen">
-          <rect id="lcd-screen-bg" x="115" y="15" width="640" height="530" fill="#242114"/>
-          <g id="lcd-text" clip-path="url(#lcd-screen-clip)">
-            <text id="lcd-title" class="lcd-title" x="120" y="54.287">Title:</text>
-            <text id="lcd-content" class="lcd-text" x="120" y="86.74">Description</text>
+
+          <rect id="lcd-screen-bg" x="115" y="15" width="640px" height="530px" fill="#242114"/>
+          <g id="lcd-text-container" clip-path="url(#lcd-screen-clip)">
+            <text id="lcd-title" class="lcd-title"  x="125" y="54.287">Title:</text>
+
+            <foreignObject x="120" y="70" width="630" height="465">
+              <div class="lcd-text-container" xmlns="http://www.w3.org/1999/xhtml">
+                <p id="lcd-text" class="lcd-text">Description</p>
+              </div>
+            </foreignObject>
           </g>
+
         </g>
         <g id="lcd-pins">
           <g class="pin" data-pin="VCC">
@@ -1602,14 +1625,6 @@
       </g>
       </svg>
     </div>
-    <div class="button-controller">
-      <button class="press-button" id="scroll-left"> &#x2190; </button>
-      <button class="press-button" id="scroll-right"> &#x2192; </button>
-      <p class="controller-text">Controls</p>
-      <button class="press-button" id="scroll-up"> &#x2191; </button>
-      <button class="press-button" id="scroll-down"> &#x2193; </button>
-      
-    </div>
     
   </div>
 
@@ -1617,9 +1632,12 @@
   <svg id="wires" aria-hidden="true"></svg>
 </div>
 
-<script src="board-api.js"></script>
-<script src="wires.js"></script>
-    
+<script src="src/portfolio.js"></script>
+
+<!--
+<script src="src/board-api.js"></script>
+<script src="src/wires.js"></script>
+-->
 
 </body>
 </html>

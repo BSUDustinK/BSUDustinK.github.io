@@ -1,0 +1,15 @@
+Simple 12 ISR Expansion
+**Proposal**
+This is a niave implimentation of an ISR handler designed for a custom Simple 12 ISA based CPU architecture.
+**Requirements**
+The input signals are as follows:
+interupt[0:3]: Interupt signals, use with timers or external devices
+clear: Clears the active interupt, acts as ACK from CPU
+ISR_Addr_IN[0:7]: Used for writing the ISR program adress to ISR vector table
+ISR_Addr_Sel: Used for selecting the row in ISR vector table
+ISR_Addr_Write: Enables capture for vector table, control flag
+CLK: Clock signal from CPU
+
+The output signals are as follows:
+Interupt_Recieved: Sends the control signal to CPU
+ISR_Addr_OUT[0:7]: Sends the program address to write to PC

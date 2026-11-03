@@ -1,0 +1,28 @@
+Embedded Systems Pinball Project
+**Proposal**
+A complex pinball machine utilizing almost every skill I have learned through-out my course work.
+The final pinball machine will utilize a STM32 board and have the following features:
+
+LED Array for Playfield Lights (WS2811)
+Serial chain of Dot Matrix Displays (MAX7219)
+External Audio chips + Speakers (Placeholders)
+Additional LEDs (Flashers/ Status Bar) driven by circuit level logic
+Magnetic Biased Hall Effect Sensors
+Tilt Bob (Fishing weigt with copper ring)
+Coin Slot Mechanism (Prebuilt module)
+Contact Targets & Buttons 
+Servos & Solenoids
+
+**Progress**
+Arduino Prototype Proof Of Concept Complete
+- Completed implimentation of hall effect sensors utilizing comparators, a priority encoder, and Logical Circuitry to drive local effect LEDs
+- Completed API for calling Audio/LED effects from ESP32 controller from main board
+- Completed State Machine logic for segmenting and controlling LED array
+- Completed Base game logic, Launch Ball, Ball Drained, Multiball, Full base game cycle
+
+**TODO**
+- Major Redesign: Design PCB for STM32 Microcontroller, with DAC and audio output
+- Major Redesign: Design RTOS to handle audio, serial, and polling tasks. 
+- Research: Hardware PWM implimentations (onboard or additional circuitry) for servo stability
+- Redesign Audio Mixing for simultaneous Sound Effects and Background Music
+- Design and model PopBumper and ragdoll toy

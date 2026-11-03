@@ -75,7 +75,7 @@ h1{
 
 #lcd-title {
   font-family: 'Departure Mono', monospace;
-  font-size: 34px;
+  font-size: 26px;
   font-weight: normal;
   font-style: normal;
   fill: #cece00; /* Use 'fill' instead of 'color' for SVG text */
@@ -83,8 +83,8 @@ h1{
 
 #lcd-text {
     font-family: 'Departure Mono', monospace;
-    font-size: 22px;
-    color: #cece00;
+    font-size: 20px;
+    color: #cece00 !important;
     letter-spacing: 1px;
     margin: 0;
     display: block;  
